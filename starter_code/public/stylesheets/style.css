@@ -38,4 +38,13 @@ a {
   padding: 0.5rem 1rem;
   cursor: pointer; }
 
+.movie-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 4rem; }
+
+.movie-list p {
+  font-weight: 700; }
+
 /*# sourceMappingURL=style.css.map */

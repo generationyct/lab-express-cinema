@@ -9,7 +9,7 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
-  const Movie = require('../models/Movies');
+const Movie = require('../models/Movie');
 
 
 const movies = [

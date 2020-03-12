@@ -46,3 +46,22 @@ a {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+.movie-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  // grid-template-rows: 1fr 1fr 1fr;
+  // grid-column-start: 1;
+  // grid-column-end: 3;
+}
+
+.movie-list p {
+  font-weight: 700;
+}
+
+.movie-list {
+  // grid-column: col 1 / span col 3;
+  // grid-row: content 1 / span content 3;
+}

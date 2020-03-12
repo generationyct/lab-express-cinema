@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 }, false);
 
-const btn = document.getElementById('button-check-movies')
-btn.onclick = () => {
+const button = document.getElementById('button-check-movies')
+button.addEventListener('click', (e) => {
   location.assign('/movies')
-}
+})

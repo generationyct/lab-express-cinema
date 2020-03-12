@@ -1,1 +1,13 @@
-<h3>Here are the Movies! from movies.hbs</h3>
+<div class="movie-wrapper">
+
+  {{#each movies}}
+
+  <div class="movie-list">
+    <p>Movie title: {{ this.title }} </p>
+    <p>Directed by: {{ director }} </p>
+    <img src="{{ image }}" alt="movie image">
+  </div>
+
+  {{/each}}
+
+</div>

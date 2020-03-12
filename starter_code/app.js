@@ -11,7 +11,7 @@ const path         = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/starter-code', {useNewUrlParser: true})
+  .connect('mongodb://localhost/movies', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -54,5 +54,7 @@ app.locals.title = 'Cinema Ironhack';
 const index = require('./routes/index');
 app.use('/', index);
 
+const movieRouter = require('./routes/movie')
+app.use('/movies', movieRouter)
 
 module.exports = app;
